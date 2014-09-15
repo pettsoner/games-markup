@@ -1,0 +1,1593 @@
+<!DOCTYPE html 5><!--[if lt IE 9]> <html lang="ru" class="ie"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="ru"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&amp;subset=latin,cyrillic"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700, 700italic, 300italic&amp;subset=latin,cyrillic"/><!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+    <script type="text/javascript" src="http://ie.cntrlmrktng.ru/1.0/help.js" charset="UTF-8" async="async"></script><![endif]-->
+  </head>
+  <body>
+    <!-- === Header ======================================================================================== -->
+    <header class="b-header">
+      <div class="b-header__top b-top-line">
+        <div class="container"><a href="#" class="b-top-line__logo">Play Generation</a>
+          <ul class="b-top-line__menu">
+            <li class="b-top-line__menu__item active"><a href="#">Главная</a></li>
+            <li class="b-top-line__menu__item"><a href="#">Каталог</a></li>
+            <li class="b-top-line__menu__item"><a href="#">Словарь терминов</a></li>
+            <li class="b-top-line__menu__item"><a href="#">Новости</a></li>
+            <li class="b-top-line__menu__item"><a href="#">Форум</a></li>
+          </ul>
+          <form class="b-top-line__search">
+            <input type="text" placeholder="Искать..." class="form-input _size_s"/>
+            <button type="submit" class="btn b-top-line__search__btn"></button>
+          </form>
+        </div>
+      </div>
+      <div class="b-header__main container"><a href="#"><img src="img/b-header__main__logo.png" class="b-header__main__logo"/></a></div>
+    </header>
+    <!-- === Main ========================================================================================== -->
+    <div class="b-main">
+      <div class="container">
+        <!-- ~~~ Left sidebar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="b-sidebar">
+          <form class="b-sidebar__section b-sidebar-filter">
+            <div class="b-sidebar__section__heading _size_l">Найди игру 
+              <div>В 3 шага</div>
+            </div>
+            <div class="b-sidebar-filter__section">
+              <div class="b-sidebar__section__heading _size_s">Выберите тип игры</div>
+              <div class="b-sidebar__section__content b-sidebar-filter__options">
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="radio" name="type" value="client" class="form-radio"/> Клиентские
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="radio" name="type" value="browser" class="form-radio"/> Браузерные
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="radio" name="type" value="all" class="form-radio"/> Все
+                </label>
+              </div>
+            </div>
+            <div class="b-sidebar-filter__section">
+              <div class="b-sidebar__section__heading _size_s">Дата появления</div>
+              <div class="b-sidebar__section__content b-sidebar-filter__options">
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="radio" name="date" value="latest" class="form-radio"/> Самые свежие
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="radio" name="date" value="2014" class="form-radio"/> 2014
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="radio" name="date" value="2013" class="form-radio"/> 2013
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="radio" name="date" value="all" class="form-radio"/> За всё время
+                </label>
+              </div>
+            </div>
+            <div class="b-sidebar-filter__section">
+              <div class="b-sidebar__section__heading _size_s">Выберите жанр</div>
+              <div class="b-sidebar__section__content b-sidebar-filter__options">
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Шутеры
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Экшены
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Гонки
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> РПГ
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> ММОРПГ
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Стратегии
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Менеджмент
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Приключения
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Аркады
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Варгеймы
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Карточные
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Квесты
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Музыкальные
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Настольные
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Стэлс-экшн
+                </label>
+                <label class="form-label b-sidebar-filter__options__item">
+                  <input type="checkbox" name="genre" value="" class="form-checkbox"/> Файтинги
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="b-sidebar-filter__btn btn _style_submit _size_s">Искать</button>
+          </form>
+          <div class="b-sidebar__section b-sidebar-poll">
+            <div class="b-sidebar__section__heading _size_s"><strong>ВК</strong> опрос</div>
+            <div class="b-sidebar__section__content"><img src="img/b-sidebar-poll.jpg"/></div>
+          </div>
+        </div>
+        <!-- ~~~ Content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="b-content">
+          <div class="b-top-games b-games-list">
+            <div class="b-content__top">
+              <div class="b-content__top__content b-top-games__top">
+                <div class="b-games-list__col">
+                  <div class="b-top-games__heading"><strong>Браузерных</strong> online игр</div>
+                </div>
+                <div class="b-games-list__col">
+                  <div class="b-top-games__heading"><strong>Клиентских</strong> online игр</div>
+                </div>
+              </div>
+            </div>
+            <div class="b-top-games__main">
+              <div class="b-games-list__col">
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/warthunder.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">War Thunder</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- War Thunder -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://warthunder.ru" class="b-game__info__link link _style_dashed">http://warthunder.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">War Thunder – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/warthunder.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">War Thunder</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- War Thunder -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://warthunder.ru" class="b-game__info__link link _style_dashed">http://warthunder.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">War Thunder – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/warthunder.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">War Thunder</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- War Thunder -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://warthunder.ru" class="b-game__info__link link _style_dashed">http://warthunder.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">War Thunder – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/warthunder.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">War Thunder</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- War Thunder -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://warthunder.ru" class="b-game__info__link link _style_dashed">http://warthunder.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">War Thunder – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/warthunder.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">War Thunder</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- War Thunder -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://warthunder.ru" class="b-game__info__link link _style_dashed">http://warthunder.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">War Thunder – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/warthunder.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">War Thunder</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- War Thunder -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://warthunder.ru" class="b-game__info__link link _style_dashed">http://warthunder.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">War Thunder – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/warthunder.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">War Thunder</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- War Thunder -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://warthunder.ru" class="b-game__info__link link _style_dashed">http://warthunder.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">War Thunder – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-games-list__col">
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><img src="games/previews/parograd.jpg" class="b-game-preview__image"/>
+                    <div class="b-game-preview__top">
+                      <div class="b-game-preview__stats">10 votes &nbsp; 943 views</div>
+                      <div class="b-game-preview__name">Parograd</div>
+                    </div>
+                    <div class="b-game-preview__bottom">
+                      <div class="b-game-preview__desc">Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.</div>
+                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="#" class="btn _style_bright _size_s">Играть</a></div>
+                    </div>
+                  </div>
+                  <div class="b-game b-modal">
+                    <div class="b-modal__heading">Лучшие online игры</div>
+                    <div class="b-game__top">
+                      <div class="container">
+                        <ul class="b-game__top__socials b-socials">
+                          <li class="b-socials__item"><a href="http://vk.com" class="b-socials__icon _size_s _icon_vkontakte"></a></li>
+                          <li class="b-socials__item"><a href="http://facebook.com" class="b-socials__icon _size_s _icon_facebook"></a></li>
+                          <li class="b-socials__item"><a href="http://twitter.com" class="b-socials__icon _size_s _icon_twitter"></a></li>
+                        </ul>
+                        <div class="b-game__top__stats"> 10 votes &nbsp; 943 views
+                          <div class="b-game__top__rating b-rating">
+                            <div class="b-rating__wrapper">
+                              <input type="radio" name="rating" value="1"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="2"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="3"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="4"/>
+                              <div class="b-rating__fill"></div>
+                              <input type="radio" name="rating" value="5"/>
+                              <div class="b-rating__fill"></div>
+                            </div>
+                            <div class="b-rating__blank"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-bg="games/backgrounds/warthunder.jpg" class="b-game__bg">
+                      <div class="container">
+                        <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__name b-game__heading _size_l b-game__section">- Parograd -</div>
+                        <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <ul class="b-game__tags b-game__section _style_light">
+                          <li class="b-game__tags__item"><a href="#">Клиентские</a></li>
+                          <li class="b-game__tags__item"><a href="#">RPG</a></li>
+                          <li class="b-game__tags__item"><a href="#">Фентези</a></li>
+                          <li class="b-game__tags__item"><a href="#">Магия</a></li>
+                          <li class="b-game__tags__item"><a href="#">Пиу-пиу</a></li>
+                        </ul>
+                        <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_dark">
+                          <div class="b-game__info">
+                            <iframe height="300px" src="//www.youtube.com/embed/037uSAIahho" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
+                            <ul class="b-game__info__items">
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Разработчик</div>
+                                <div class="b-game__info__text">Gaijin Entertaiment</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Дата выхода </div>
+                                <div class="b-game__info__text">01.11.2013</div>
+                              </li>
+                              <li class="b-game__info__item">
+                                <div class="b-game__info__heading">Официальный сайт</div>
+                                <div class="b-game__info__text"><a href="http://parodraf.ru" class="b-game__info__link link _style_dashed">http://parodraf.ru</a></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game-advantages">
+                          <ul class="b-game-advantages__features">
+                            <li class="b-game-advantages__features__item">4 000 000 игроков</li>
+                            <li class="b-game-advantages__features__item">Клановая борьба</li>
+                            <li class="b-game-advantages__features__item">Возможность стать богом</li>
+                            <li class="b-game-advantages__features__item">Великолепная графика</li>
+                            <li class="b-game-advantages__features__item">Опыт, награды, трофеи, титулы</li>
+                          </ul>
+                          <ul class="b-game-advantages__awards">
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                            <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
+                          </ul>
+                        </div>
+                        <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section b-game__desc">
+                          <p class="b-game__desc__text">Parograd – клиентская онлайн игра про вторую мировую войну, где нам предстоит опробовать множество военной техники тех лет.</p>
+                          <p class="b-game__desc__text">На данный момент игра находится на стадии бета тестирования, но уже сейчас выглядит очень целостной и многообещающей. Пока в игре доступны для управления только самолеты, но разработчики обещают за время ОБТ полностью реализовать наземную технику и корабли.</p><a href="#" class="btn _style_bright _size_l">Играть</a>
+                        </div>
+                        <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div class="b-game__section _style_light b-game__recommendations">
+                          <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
+                          <div class="b-games-slider js-slider">
+                            <div class="b-games-slider__wrapper js-slider__wrapper">
+                              <ul>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                                <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
+                                  <div class="b-games-slider__item__bottom">
+                                    <div class="b-games-slider__item__heading">- Кошки картошки -</div>
+                                    <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="b-game__screens">
+                      <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+                      <div class="b-game__screens__slider">
+                        <div class="b-screens-slider js-slider">
+                          <div class="b-screens-slider__wrapper js-slider__wrapper">
+                            <ul>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-1.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-2.jpg"/></li>
+                              <li class="b-screens-slider__item"><img src="games/screens/warthunder-3.jpg"/></li>
+                            </ul>
+                          </div>
+                          <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+                        </div><a href="#" class="btn _style_bright _size_l">Играть</a>
+                      </div>
+                    </div>
+                    <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="container">
+                      <div class="b-game__section b-game__comments"><img src="img/b-game__comments.jpg"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ~~~ Right sidebar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="b-sidebar">
+          <div class="b-sidebar__section b-auth">
+            <div class="b-sidebar__section__heading _size_l">Аккаунт 
+              <div>Play 4 Free</div>
+            </div>
+            <div class="b-auth__section _dark">
+              <label class="form-label">Логин
+                <input type="text" placeholder="введите логин" class="form-input _size_s"/>
+              </label>
+              <label class="form-label">Пароль
+                <input type="password" placeholder="введите пароль" class="form-input _size_s"/>
+              </label>
+              <label class="form-label b-auth__remember">
+                <input type="checkbox" class="form-checkbox"/> Запомнить
+              </label>
+            </div>
+            <div class="b-auth__section">
+              <button type="submit" class="btn _style_submit _size_s">Войти</button>
+            </div>
+            <div class="b-auth__section _dark">
+              <div class="b-auth__socials">Войти через
+                <ul class="b-socials">
+                  <li class="b-socials__item"><a href="#" class="b-socials__icon _size_l _icon_vkontakte"></a></li>
+                  <li class="b-socials__item"><a href="#" class="b-socials__icon _size_l _icon_facebook"></a></li>
+                  <li class="b-socials__item"><a href="#" class="b-socials__icon _size_l _icon_twitter"></a></li>
+                </ul>
+              </div><a href="#" class="b-auth__register link _style_dashed">Зарегестрироваться</a>
+            </div>
+          </div>
+          <div class="b-sidebar-features">
+            <div class="b-sidebar__section b-sidebar-features__item">
+              <div class="b-sidebar-features__item__heading _icon_best"><strong>Лучшие</strong> Бесплатные игры</div>
+              <div class="b-sidebar-features__item__text">Что-то написано</div>
+            </div>
+            <div class="b-sidebar__section b-sidebar-features__item">
+              <div class="b-sidebar-features__item__heading _icon_free">Играй <strong>Бесплатно</strong></div>
+              <div class="b-sidebar-features__item__text">Все игры на нашем сайте абсолютно бесплатны!</div>
+            </div>
+            <div class="b-sidebar__section b-sidebar-features__item">
+              <div class="b-sidebar-features__item__heading _icon_play"><strong>Начни играть</strong> В два клика</div>
+              <div class="b-sidebar-features__item__text">Топовые игры ещё никогда не были так доступны!</div>
+            </div>
+            <div class="b-sidebar__section b-sidebar-features__item">
+              <div class="b-sidebar-features__item__heading _icon_easy"><strong>Быстро</strong></div>
+              <div class="b-sidebar-features__item__text">Регистрация не займёт и 5 минут!</div>
+            </div>
+            <div class="b-sidebar__section b-sidebar-features__item">
+              <div class="b-sidebar-features__item__heading _icon_guide">Читай <strong>гайды</strong></div>
+              <div class="b-sidebar-features__item__text">Получи доступ к прохождениям, подсказкам и секретам!</div>
+            </div>
+            <div class="b-sidebar__section b-sidebar-features__item">
+              <div class="b-sidebar-features__item__heading _icon_video"><strong>Делай</strong> Видеотрансляции</div>
+              <div class="b-sidebar-features__item__text">Смотри чужие и устраивай собственные видеотрансляции через TWITCH-TV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== Promo ========================================================================================  -->
+    <div class="b-promo">
+      <div class="b-promo__main">
+        <div class="container">
+          <div class="b-promo__heading">Нужен больший игровой опыт?</div>
+          <div class="b-promo__text">Присоединяйся к игровому сообществу “PLAY 4 FREE” <br/>Зарегистрируйся и ... !</div>
+          <div class="b-promo__features b-promo-features">
+            <div class="b-promo-features__item"><img src="img/b-promo-features__item-1.png" class="b-promo-features__item__image"/>
+              <p class="b-promo-features__item__text">Создай <strong>свою</strong><br/><strong>библиотеку игр!</strong></p>
+            </div>
+            <div class="b-promo-features__item"><img src="img/b-promo-features__item-2.png" class="b-promo-features__item__image"/>
+              <p class="b-promo-features__item__text"><strong>Устраивай</strong> собственные<br/><strong>видеотрансляции</strong><br/>посредством 
+                <nobr><strong>TWITCH-TV</strong></nobr>!
+              </p>
+            </div>
+            <div class="b-promo-features__item"><img src="img/b-promo-features__item-3.png" class="b-promo-features__item__image"/>
+              <p class="b-promo-features__item__text"><strong>Получи</strong> доступ <br/>к <strong>гайдам</strong>!</p>
+            </div>
+            <div class="b-promo-features__item"><img src="img/b-promo-features__item-4.png" class="b-promo-features__item__image"/>
+              <p class="b-promo-features__item__text">Делись <strong>впечатлениями</strong><br/>с другими игроками<br/><strong>на форуме</strong></p>
+            </div>
+            <div class="b-promo-features__item"><img src="img/b-promo-features__item-5.png" class="b-promo-features__item__image"/>
+              <p class="b-promo-features__item__text"><strong>Пиши и размещай</strong><br/>собственные рецензии</p>
+            </div>
+            <div class="b-promo-features__item"><img src="img/b-promo-features__item-6.png" class="b-promo-features__item__image"/>
+              <p class="b-promo-features__item__text"><strong>Получи</strong> доступ к<br/>своей <strong>игровой</strong><br/><strong>статистике</strong></p>
+            </div>
+          </div>
+          <div class="b-promo__text">И это АБСОЛЮТНО бесплатно!</div>
+        </div>
+      </div>
+      <div class="b-promo__bottom container"><a href="#" class="btn _style_bright _size_m b-promo__register">Быстрая регистрация</a>
+        <div class="b-promo__line"></div>
+        <ul class="b-promo__socials b-socials">
+          <li class="b-socials__item"><a href="#" class="b-socials__icon _size_m _icon_vkontakte"></a></li>
+          <li class="b-socials__item"><a href="#" class="b-socials__icon _size_m _icon_facebook"></a></li>
+          <li class="b-socials__item"><a href="#" class="b-socials__icon _size_m _icon_twitter"></a></li>
+        </ul>
+        <div class="b-promo__slogan">- Будь всегда IN GAME! -</div>
+      </div>
+    </div>
+    <!-- ==== Footer =======================================================================================  -->
+    <footer class="b-footer">
+      <div class="b-footer__logo"><a href="#"><img src="img/b-footer__logo.png"/></a></div>
+      <div class="b-footer__copy">Все права защищены, 2014-2015 (с)</div>
+      <div class="b-footer__about">Лучшие бесплатные onlime-игры</div>
+      <div class="b-footer__dev"><a href="http://tesla-m.ru/" target="_blank" class="link _style_dashed">Сделано в Tesla маркетинг</a></div>
+    </footer>
+    <!-- === To top ======================================================================================== --><a href="#" class="b-to-top"></a>
+    <!-- === Scripts ======================================================================================= -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery.fancybox.js"></script>
+    <script src="js/vendor/handlebars.js"></script>
+    <script src="js/vendor/sly.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
