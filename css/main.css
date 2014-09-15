@@ -246,8 +246,8 @@ strong {
   color: #000;
 }
 .link {
-  display: inline-block;
   text-decoration: none;
+  line-height: 1.3;
 }
 .link._style_dashed {
   border-bottom: 1px dashed;
@@ -481,6 +481,8 @@ strong {
 .b-game-preview__desc {
   padding: 10px;
   padding: 0.625rem;
+  min-height: 150px;
+  min-height: 9.375rem;
   background: #fff;
   font-style: italic;
 }
@@ -675,6 +677,7 @@ strong {
 }
 .b-game__info__text {
   font-style: italic;
+  word-break: break-all;
 }
 .b-game__info__link {
   color: #98d6fd;
@@ -691,11 +694,11 @@ strong {
   text-align: center;
 }
 .b-game__desc__text {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   padding: 0 10px;
   padding: 0 0.625rem;
   font-style: italic;
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem;
 }
 .b-game__recommendations {
   padding-top: 20px;
@@ -836,12 +839,14 @@ strong {
   margin: 0 auto;
   position: relative;
 }
+.b-games-slider__wrapper {
+  height: 215px;
+}
 .b-games-slider__item {
   float: left;
   width: 180px;
+  height: 215px;
   margin: 0 15px;
-  min-height: 215px;
-  min-height: 13.4375rem;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
@@ -1138,9 +1143,13 @@ strong {
   margin: 1.875rem auto;
   position: relative;
 }
+.b-screens-slider__wrapper {
+  height: 285px;
+}
 .b-screens-slider__item {
   float: left;
   width: 331px;
+  height: 285px;
   margin: 0 15px;
 }
 @media only screen and (min-width: 1201px) {

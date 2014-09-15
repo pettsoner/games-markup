@@ -5,7 +5,8 @@
     "release_date":"2010",
     "official_site":"........................",
     "url_for_play":"#",
-    "preview_img":"games/previews/mylands.jpeg",
+    "video_url": "//www.youtube.com/embed/U4HGFoFd6jo",
+    "preview_img":"games/previews/mylands.jpg",
     "preview_desc":"My Lands – не просто браузерная многопользовательская игра, а военно-экономическая стратегия в реальном времени!",
     "desc":[  
       "My Lands – не просто браузерная многопользовательская игра, а военно-экономическая стратегия в реальном времени!",
@@ -45,7 +46,8 @@
       "games/screens/mylands-5.png",
       "games/screens/mylands-6.png"
     ],
-    "bg":"games/backgrounds/mylands.jpg",
+    "bg":"games/backgrounds/mylands.jpeg",
+    "slug":"mylands",
     "type": "browser"
   },
   {  
@@ -54,6 +56,7 @@
     "release_date":"ноябрь 2013",
     "official_site":"..........................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/oRrwwmfu8gA",
     "preview_img":"games/previews/goodgameempire.png",
     "preview_desc":"Создай свою могущественную империю! Выполняй квесты и воюй с соперниками, организовывай альянсы и исследуй новые земли… Захватывающая военно-экономическая стратегия Goodgame Empire позволит тебе в полной мере проявить все свои качества грамотного и мудрого руководителя и опытного военного стратега.",
     "desc":[  
@@ -90,6 +93,7 @@
       "games/screens/goodgameempire-3.png"
     ],
     "bg":"games/backgrounds/goodgameempire.jpg",
+    "slug":"goodgame-empire",
     "type": "browser"
   },
   {  
@@ -98,6 +102,7 @@
     "release_date":"2004",
     "official_site":"....................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/HaR5FCcolSo",
     "preview_img":"games/previews/carnage.jpg",
     "preview_desc":"Хочешь окунуться в мир Средневековья со всей его красотой и опасностью? Тогда Carnage именно то, что тебе нужно. Это интересная и увлекательная игра, где ты сможешь поучаствовать в боях, общаться с другими игроками, развивать торговлю и заниматься политикой, освоить понравившуюся профессию, а, что самое главное, - зарабатывать реальные деньги. Здесь каждый найдет себе что-то по вкусу.",
     "desc":[  
@@ -142,6 +147,7 @@
     "release_date":"сентябрь 2004",
     "official_site":"......................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/TejYDBdQuDw",
     "preview_img":"games/previews/travian.jpg",
     "preview_desc":"Данную игру можно смело внести в список самых популярных игр в мире. Впервые про Travian узнали в 2004 году, но количество игроков растёт с каждым годом. Сегодня данная игра переведена на многие языки мира",
     "desc":[  
@@ -185,6 +191,7 @@
     "release_date":"2014",
     "official_site":"................................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/jVBXcp_SmjI",
     "preview_img":"games/previews/мечимагия.jpg",
     "preview_desc":"«Меч и Магия®: Герои Онлайн» — полноценное, полностью переведенное на русский язык продолжение известной миллионам серии «Меч и Магия: Герои». Действие новинки разворачивается между пятой и шестой эпизодами саги. Теперь эпическая битва разразилась между Рыцарями Дракона и Орденом Пустоты во главе с могущественным злодеем Сандро. Над миром Асхана нависла новая угроза…",
     "desc":[  
@@ -230,6 +237,7 @@
     "release_date":"март 2013",
     "official_site":"http://..................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/fRZwTNW0L4o",
     "preview_img":"games/previews/riseofheroes.jpg",
     "preview_desc":"Rise of Heroes откроет перед игроками врата в совершенно новый, незнакомый доселе мир. Мир, в котором восточная культура пошла по-иному пути развития, нежели это представлено в классической истории, взяв за основу steam-punk технологии. ",
     "desc":[  
@@ -277,6 +285,7 @@
     "release_date":"2013",
     "official_site":"............................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/caL3WjNimC4",
     "preview_img":"games/previews/kingsroad.jpg",
     "preview_desc":"Примерь на себя доспехи рыцаря, амуницию лучника или мантию волшебника! Собери непобедимый отряд вместе со своими друзьями и отправляйся в долгий и увлекательный путь через тысячелетние крепости, уютные деревушки, сумрачные леса и мрачные подземелья",
     "desc":[  
@@ -326,6 +335,7 @@
     "release_date":"июль 2011",
     "official_site":"..............................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/r12ym0yasCY",
     "preview_img":"games/previews/полныйпи.jpg",
     "preview_desc":"\"Полный ПИ\" – забавная браузерная игра от отечественной компании Crazy Bit. Это хоррор, приправленный гремучей смесью из комиксов и черного юмора.",
     "desc":[  
@@ -368,6 +378,7 @@
     "release_date":"сентябрь 2006",
     "official_site":"..........................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/f09aHKZS6-o",
     "preview_img":"games/previews/legendonline.jpg",
     "preview_desc":"Погрузись в мир воюющих королей, фантастических монстров и множества опасностей Legend Online! Улучшай и настраивай своего героя, солдат, оружие и город, чтобы вести уникальный бой в мире эпических PvE боев и потрясающих PvP битв!",
     "desc":[  
@@ -411,6 +422,7 @@
     "release_date":"16.12.2013",
     "official_site":"........................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/KE_OqFIrhGA",
     "preview_img":"games/previews/annoonline.jpg",
     "preview_desc":"Построй впечатляющий средневековый город в ANNO Онлайн! Колонизируй новые территории, налаживай торговлю и ищи сокровища.",
     "desc":[  
@@ -456,6 +468,7 @@
     "release_date":"декабрь 2013",
     "official_site":"http://cityadspix.com/click-FQB592SK-VRMIQVUV?sa=Top10",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/1XpDii-D_PI",
     "preview_img":"games/previews/reborn.png",
     "preview_desc":"Reborn напоминает о таинственных и загадочных скандинавских мифах, в которых игрок сможет поучаствовать лично. В этом мире важна только сила, мужество и доблесть – остальное не имеет значение. <br/>Зарегистрируйся сейчас и получи специальный подарок!",
     "desc":[  
@@ -502,6 +515,7 @@
     "release_date":"01.11.2013",
     "official_site":"http://cityadspix.com/click-JQB591XA-NKHEQSO5?sa=Top10",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/0sfA-NsbzJY",
     "preview_img":"games/previews/warthunder.jpg",
     "preview_desc":"Лучшая онлайн игра 2013 года, посвященная боевым событиям Второй Мировой войны. Это полноценный с реалистичной физикой, современной графикой авиа симулятор и симулятор танковых сражений.",
     "desc":[  
@@ -551,6 +565,7 @@
     "release_date":"сентябрь 2013",
     "official_site":"..........................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/raCtK6_qSjE",
     "preview_img":"games/previews/darkage.jpg",
     "preview_desc":"Dark Age — это единственная клиентская онлайн игра о конфликте бессмертных Вампиров и свирепых Оборотней, с современной графикой, детально проработанной вселенной и игровой механикой. Кровавое и беспощадное противостояние темных сил в огромном мире, полном испытаний и невероятных возможностей, покажет твою истинную сущность!",
     "desc":[  
@@ -596,6 +611,7 @@
     "release_date":"апрель 2012",
     "official_site":".........................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/vYS_4odntqA",
     "preview_img":"games/previews/panzar.jpg",
     "preview_desc":"Потрясающий сетевой боевик в удивительном мире фэнтези. Здесь тебя ждут логические загадки, интересные квесты и задания, над которыми придется хорошенько поработать. Если ты любишь опасные приключения и путешествия, то эта игра - именно то, что тебе нужно.",
     "desc":[  
@@ -642,6 +658,7 @@
     "release_date":"октябрь 2011",
     "official_site":"..........................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/Ebtm9NGuzt4",
     "preview_img":"games/previews/primeworld.jpg",
     "preview_desc":"Prime World – это настоящая революция в мире социальных стратегий. Огромное количество комбинаций смертоносных умений и талантов позволят Вам выработать свой, неповторимый стиль игры. Герои сражаются в уникальном мире, ведут тактические бои, управляют замком, и борются за контроль над магией прайма, опасной субстанцией, дающей власть над миром.",
     "desc":[  
@@ -686,6 +703,7 @@
     "release_date":"июнь 2011",
     "official_site":"http://cityadspix.com/click-AQB591UP-MKIGQDXT?sa=Top10",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/72JHyy6eD9A",
     "preview_img":"games/previews/bloodandsoul.jpg",
     "preview_desc":"Кровопролитные сражения гильдий и пышные свадьбы, особая система заклинаний и развитие божественных помощников, гладиаторские бои на арене и настоящие признания в любви, — все это можно найти в одной из самых живых онлайн-игр, когда-либо выпущенных в России",
     "desc":[  
@@ -730,6 +748,7 @@
     "release_date":"01.02.2011",
     "official_site":"........................u",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/OU1NnTIW9LA",
     "preview_img":"games/previews/starconflict.jpg",
     "preview_desc":"Star Conflict — это новый динамичный MMO экшн, позволяющий сесть за штурвал космического звездолета и принять участие в массовых битвах звездных флотилий!",
     "desc":[  
@@ -774,6 +793,7 @@
     "release_date":"06.10.2010",
     "official_site":".........................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/9a8hWtKcvc4",
     "preview_img":"games/previews/karos.jpg",
     "preview_desc":"В онлайн-игре в жанре фэнтези под названием Karos игроку предстоит перевоплотиться в бесстрашного мифического героя и победить силы тьмы, завладевшие миром Асмары. Выполняя разнообразные задания, принимая участие в боях между гильдиями и массовыми PvP, игроки будут бороться за владение драгоценным источником жизненной энергии под названием Fletta.",
     "desc":[  
@@ -817,6 +837,7 @@
     "release_date":"декабрь 2011",
     "official_site":".......................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/oG6TfSIk3Zw",
     "preview_img":"games/previews/strongholdkingdoms.jpg",
     "preview_desc":"Господа рыцари, приветствуйте занимательную онлайн игру в средневековом стиле под чудесным названием Stronghold Kingdoms, что в переводе – Влиятельные Королевства! Приглашаем всех на краткую экскурсию в игровой мир.",
     "desc":[  
@@ -859,6 +880,7 @@
     "release_date":"октябрь 2012",
     "official_site":"...............................",
     "url_for_play":"#",
+    "video_url": "//www.youtube.com/embed/Il9OylLl_5I",
     "preview_img":"games/previews/metalwaronline.jpg",
     "preview_desc":"Сражайтесь с друзьями в настощем 3D-шутере. Уничтожайте врагов ракетными залпами или выжигайте их броню лазером. Огромные скорости, футуристичная техника, респауны прямо во время боя. Только сильнейшие наемники останутся в живых",
     "desc":[  
