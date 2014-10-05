@@ -17,7 +17,7 @@ $(document).ready(function() {
     ------------------------------------------------------------------------------- */
 
     $.extend($.fancybox.defaults, {
-        scrollOutside: false,
+        scrollOutside: true,
         scrolling: 'no',
         margin: [0, 0, 0, 0],
         padding: 0,
@@ -29,28 +29,11 @@ $(document).ready(function() {
         closeEffect: 'none'
     });
 
-    
-
-});
-
-$(window).load(function() {
-    
-    var sliders = [];
-
-    /* Слайдеры
-    ------------------------------------------------------------------------------- */
-
-    $('.js-slider').each(function() {
-        var $this = $(this);
-
-        sliders.push();
-    });
-
     /* Установка высоты слайдеров
     ------------------------------------------------------------------------------- */
 
-    $(window).on('resize updateSlidersHeight', function() {
-        /*$('.js-slider').each(function() {
+    $(window).on('resize setSlidersHeight', function() {
+        $('.js-slider').each(function() {
             var height = 0;
             var $this  = $(this);
 
@@ -61,14 +44,26 @@ $(window).load(function() {
             });
             
             $this.find('.js-slider__wrapper').height(height);
-
-            $this.sly('reload');
-        });*/
+        });
     });
+
+    /*$(window).on('resize', function() {
+
+        $('.js-slider__wrapper').each(function() {
+            console.log($(this));
+        });
+
+    });*/
 
     /* Вызываем событие resize
     ------------------------------------------------------------------------------- */
 
-    //$(window).trigger('updateSlidersHeight');
+    //$(window).trigger('setSlidersHeight');
+
+});
+
+$(window).load(function() {
+    
+    $(window).resize();
 
 });

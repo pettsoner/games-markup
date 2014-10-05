@@ -653,7 +653,7 @@
 			} else {
 				// See http://bugs.jquery.com/ticket/6724
 				rez.w = isTouch && window.innerWidth  ? window.innerWidth  : W.width();
-				rez.h = isTouch && window.innerHeight ? window.innerHeight : W.height();
+				rez.h = window.innerHeight; //isTouch && window.innerHeight ? window.innerHeight : W.height();
 			}
 
 			return rez;
@@ -1552,6 +1552,8 @@
 				width   : getValue(width  + wPadding),
 				height  : getValue(height + hPadding)
 			};
+
+			console.log(pos);
 
 			return pos;
 		},

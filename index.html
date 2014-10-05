@@ -10,33 +10,44 @@
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&amp;subset=latin,cyrillic"/>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700, 700italic, 300italic&amp;subset=latin,cyrillic"/>
-    <script src="//vk.com/js/api/openapi.js?115"></script>
-    <script>
-      VK.init({apiId: 4552013, onlyWidgets: true});
-      
-    </script><!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
-    <script type="text/javascript" src="http://ie.cntrlmrktng.ru/1.0/help.js" charset="UTF-8" async="async"></script><![endif]-->
+    <!--script(src='//vk.com/js/api/openapi.js?115')-->
+    <!-- apiId - id вашего приложения в VK. Для каждого домена требуется отдельное приложение!!-->
+    <!--script.
+    VK.init({apiId: 4572414, onlyWidgets: true});
+    
+    --><!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script><![endif]-->
   </head>
   <body>
     <!-- === Header ======================================================================================== -->
     <header class="b-header">
-      <div class="b-header__top b-top-line">
-        <div class="container"><a href="#" class="b-top-line__logo">Play Generation</a>
-          <ul class="b-top-line__menu">
-            <li class="b-top-line__menu__item active"><a href="#">Главная</a></li>
-            <li class="b-top-line__menu__item"><a href="#">Каталог</a></li>
-            <li class="b-top-line__menu__item"><a href="#">Словарь терминов</a></li>
-            <li class="b-top-line__menu__item"><a href="#">Новости</a></li>
-            <li class="b-top-line__menu__item"><a href="#">Форум</a></li>
-          </ul>
-          <form class="b-top-line__search">
-            <input type="text" placeholder="Искать..." class="form-input _size_s"/>
-            <button type="submit" class="btn b-top-line__search__btn"></button>
-          </form>
-        </div>
-      </div>
-      <div class="b-header__main container"><a href="#"><img src="img/b-header__main__logo.png" class="b-header__main__logo"/></a></div>
+      <!--.b-header__top.b-top-line
+      .container
+          a(href='#').b-top-line__logo Play Generation
+      
+          ul.b-top-line__menu
+              li.b-top-line__menu__item.active
+                  a(href='#') Главная
+      
+              li.b-top-line__menu__item
+                  a(href='#') Каталог
+      
+              li.b-top-line__menu__item
+                  a(href='#') Словарь терминов
+      
+              li.b-top-line__menu__item
+                  a(href='#') Новости
+                  
+              li.b-top-line__menu__item
+                  a(href='#') Форум
+      
+          form.b-top-line__search
+              input(type='text', placeholder='Искать...').form-input._size_s
+      
+              button(type='submit').btn.b-top-line__search__btn
+      
+      -->
+      <div class="b-header__main container"><a href="./"><img src="img/logo.png" class="b-header__main__logo"/></a></div>
     </header>
     <!-- === Main ========================================================================================== -->
     <div class="b-main">
@@ -132,11 +143,12 @@
               </div>
             </div>
             <button type="submit" class="b-sidebar-filter__btn btn _style_submit _size_s">Искать</button>
+            <!--.b-sidebar__section.b-sidebar-poll.b-sidebar__section__heading._size_s <strong>ВК</strong> опрос
+            
+            .b-sidebar__section__content
+                img(src='img/b-sidebar-poll.jpg')
+            -->
           </form>
-          <div class="b-sidebar__section b-sidebar-poll">
-            <div class="b-sidebar__section__heading _size_s"><strong>ВК</strong> опрос</div>
-            <div class="b-sidebar__section__content"><img src="img/b-sidebar-poll.jpg"/></div>
-          </div>
         </div>
         <!-- ~~~ Content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="b-content">
@@ -153,15 +165,15 @@
             </div>
             <div class="b-top-games__main">{{#each games}}
               <div class="b-games-list__col">{{#each this}}
-                <div data-game-name="{{name}}" class="b-games-list__item">
-                  <div class="b-game-preview"><img src="{{preview_img}}" class="b-game-preview__image"/>
+                <div class="b-games-list__item">
+                  <div class="b-game-preview"><a href="#" data-open-game="{{id}}"><img src="{{preview_img}}" class="b-game-preview__image"/></a>
                     <div class="b-game-preview__top">
                       <div class="b-game-preview__stats">{{votes}} votes &nbsp; {{views}} views</div>
                       <div class="b-game-preview__name">{{name}}</div>
                     </div>
                     <div class="b-game-preview__bottom">
                       <div class="b-game-preview__desc">{{{preview_desc}}}</div>
-                      <div class="b-game-preview__actions"><a href="#" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="{{url_for_play}}" target="_blank" class="btn _style_bright _size_s">Играть</a></div>
+                      <div class="b-game-preview__actions"><a href="#" data-open-game="{{id}}" class="b-game-preview__more link _style_dashed">Подробнее</a><a href="{{url_for_play}}" target="_blank" class="btn _style_bright _size_s">Играть</a></div>
                     </div>
                   </div>
                 </div>{{/each}}
@@ -169,14 +181,24 @@
             </div>
           </div>
           <div class="b-game b-modal">
-            <div class="b-modal__heading">Лучшие online игры</div>
-            <div class="b-game__top">
-              <div class="container">
-                <ul class="b-game__top__socials b-socials">{{#each socials}}
-                  <li class="b-socials__item"><a href="{{this}}" class="b-socials__icon _size_s _icon_{{@key}}"></a></li>{{/each}}
-                </ul>
-                <div class="b-game__top__stats">{{votes}} votes &nbsp; {{views}} views
-                  <div class="b-game__top__rating b-rating">
+            <!-- ~~~ Верх ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="b-game__top b-game__section">
+              <ul class="b-game__top__socials b-socials">{{#each socials}}
+                <li class="b-socials__item"><a href="{{this}}" class="b-socials__icon _size_s _icon_{{@key}}"></a></li>{{/each}}
+              </ul>
+              <h2 class="b-game__top__name b-game__heading _section _size_l">{{name}}</h2>
+            </div>
+            <div class="b-game__section b-game__tags">
+              <div class="b-game__line"></div>
+              <ul>{{#each tags}}
+                <li class="b-game__tags__item"><a href="#">{{this}}</a></li>{{/each}}
+              </ul>
+            </div>
+            <!-- ~~~ Краткая информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div data-bg="{{bg}}" class="b-game__bg b-game__section">
+              <div class="b-game-brief">
+                <div class="b-game-brief__top">
+                  <div class="b-game-brief__rating b-rating">
                     <div class="b-rating__wrapper">
                       <input type="radio" name="rating" value="1"/>
                       <div class="b-rating__fill"></div>
@@ -191,102 +213,50 @@
                     </div>
                     <div class="b-rating__blank"></div>
                   </div>
+                  <div class="b-game-brief__stats">{{votes}} votes &nbsp; {{views}} views</div>
+                </div>
+                <div class="b-game-brief__main">
+                  <ul class="b-game-brief__info">
+                    <li class="b-game-brief__info__item">
+                      <div class="b-game-brief__info__heading">Разработчик</div>
+                      <div class="b-game-brief__info__text">{{developer}}</div>
+                    </li>
+                    <li class="b-game-brief__info__item">
+                      <div class="b-game-brief__info__heading">Дата выхода</div>
+                      <div class="b-game-brief__info__text">{{release_date}}</div>
+                    </li>{{#if official_site}}
+                    <li class="b-game-brief__info__item">
+                      <div class="b-game-brief__info__text"><a href="{{official_site}}" class="b-game-brief__info__link link _style_dashed">Сайт игры</a></div>
+                    </li>{{/if}}
+                  </ul><a href="{{url_for_play}}" class="btn _style_bright _size_l b-game-brief__play b-game__play">Играть</a>
                 </div>
               </div>
             </div>
-            <div data-bg="{{bg}}" class="b-game__bg">
-              <div class="container">
-                <!-- ~~~ Название ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <div class="b-game__name b-game__heading _size_l b-game__section">- {{name}} -</div>
-                <!-- ~~~ Теги ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <ul class="b-game__tags b-game__section _style_light">{{#each tags}}
-                  <li class="b-game__tags__item"><a href="#">{{this}}</a></li>{{/each}}
+            <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="b-game-advantages b-game__section">
+              <div class="b-game-advantages__features b-game-advantages__col">
+                <div class="b-game-advantages__heading b-game__heading _section _size_m">Особенности</div>
+                <ul>{{#each advantages.features}} 
+                  <li class="b-game-advantages__features__item"><span>{{this}}</span></li>{{/each}}
                 </ul>
-                <!-- ~~~ Доп. информация ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <div class="b-game__section _style_dark">
-                  <div class="b-game__info">
-                    <iframe height="300px" src="{{video_url}}" frameborder="0" allowfullscreen="allowfullscreen" class="b-game__info__video"></iframe>
-                    <ul class="b-game__info__items">
-                      <li class="b-game__info__item">
-                        <div class="b-game__info__heading">Разработчик</div>
-                        <div class="b-game__info__text">{{developer}}</div>
-                      </li>
-                      <li class="b-game__info__item">
-                        <div class="b-game__info__heading">Дата выхода </div>
-                        <div class="b-game__info__text">{{release_date}}</div>
-                      </li>
-                      <li class="b-game__info__item">
-                        <div class="b-game__info__heading">Официальный сайт</div>
-                        <div class="b-game__info__text"><a href="{{official_site}}" class="b-game__info__link link _style_dashed">{{official_site}}</a></div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- ~~~ Преимущества ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <div class="b-game__section _style_light b-game-advantages">
-                  <ul class="b-game-advantages__features">{{#each advantages.features}} 
-                    <li class="b-game-advantages__features__item">{{this}}</li>{{/each}}
-                  </ul>
-                  <ul class="b-game-advantages__awards">
-                    <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
-                    <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
-                    <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
-                    <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
-                    <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
-                    <li class="b-game-advantages__awards__item"><img src="img/b-game-advantages__awards__item.png"/></li>
-                  </ul>
-                </div>
-                <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <div class="b-game__section b-game__desc">{{#each desc}} 
-                  <p class="b-game__desc__text">{{this}}</p>{{/each}}<a href="{{url_for_play}}" class="btn _style_bright _size_l">Играть</a>
-                </div>
-                <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <div class="b-game__section _style_light b-game__recommendations">
-                  <div class="b-game__recommendations__heading">Вам так же могут понравится</div>
-                  <div class="b-games-slider js-slider">
-                    <div class="b-games-slider__wrapper js-slider__wrapper">
-                      <ul>
-                        <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
-                          <div class="b-games-slider__item__bottom">
-                            <div class="b-games-slider__item__heading">- Кошки картошки -</div>
-                            <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
-                          </div>
-                        </li>
-                        <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
-                          <div class="b-games-slider__item__bottom">
-                            <div class="b-games-slider__item__heading">- Кошки картошки -</div>
-                            <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
-                          </div>
-                        </li>
-                        <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
-                          <div class="b-games-slider__item__bottom">
-                            <div class="b-games-slider__item__heading">- Кошки картошки -</div>
-                            <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
-                          </div>
-                        </li>
-                        <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
-                          <div class="b-games-slider__item__bottom">
-                            <div class="b-games-slider__item__heading">- Кошки картошки -</div>
-                            <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
-                          </div>
-                        </li>
-                        <li class="b-games-slider__item"><img src="games/previews/warthunder.jpg" class="b-games-slider__item__image"/>
-                          <div class="b-games-slider__item__bottom">
-                            <div class="b-games-slider__item__heading">- Кошки картошки -</div>
-                            <div class="b-games-slider__item__desc"><a href="#" class="link _style_dashed">Подробнее</a></div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
-                  </div>
-                </div>
+              </div>
+              <div class="b-game-advantages__awards b-game-advantages__col">
+                <div class="b-game-advantages__heading b-game__heading _section _size_m">Награды</div>
+                <ul>{{#each advantages.awards}} 
+                  <li class="b-game-advantages__awards__item"><img src="{{this}}"/></li>{{/each}}
+                </ul>
               </div>
             </div>
-            <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="b-game__line"></div>
+            <!-- ~~~ Описание ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="b-game__section b-game__desc">
+              <div class="b-game__heading _section _size_m">Описание</div>{{#each desc}} 
+              <p class="b-game__desc__text">{{this}}</p>{{/each}}<a href="{{url_for_play}}" class="btn _style_bright _size_l b-game__play">Играть</a>
+            </div>
+            <!-- ~~~ Скриншоты ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             {{#if screens}} 
-            <div class="b-game__screens">
-              <div class="b-game__screens__heading b-game__heading _size_l">Скриншоты</div>
+            <div class="b-game__screens b-game__section _section-bg">
+              <div class="b-game__screens__heading b-game__heading _section _size_m">Скриншоты</div>
               <div class="b-game__screens__slider">
                 <div class="b-screens-slider js-slider">
                   <div class="b-screens-slider__wrapper js-slider__wrapper">
@@ -295,72 +265,93 @@
                     </ul>
                   </div>
                   <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
-                </div><a href="{{url_for_play}}" class="btn _style_bright _size_l">Играть</a>
+                </div><a href="{{url_for_play}}" class="btn _style_bright _size_l b-game__play">Играть</a>
               </div>
             </div>{{/if}}
+            <!-- ~~~ Видео ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            {{#if video_url}} 
+            <div class="b-game__video b-game__section">
+              <div class="b-game__video__heading b-game__heading _section _size_m">Видео</div>
+              <div class="b-game__video__wrapper">
+                <iframe src="{{video_url}}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>{{/if}}
+            <!-- ~~~ Вам так же могут понравиться ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            {{#if similar}} 
+            <div class="b-game__section _section-bg b-game__similar">
+              <div class="b-game__similar__heading b-game__heading _section _size_m">Вам так же могут понравится</div>
+              <div class="b-games-slider js-slider">
+                <div class="b-games-slider__wrapper js-slider__wrapper">
+                  <ul>{{#each similar}} 
+                    <li class="b-games-slider__item">
+                      <div class="b-games-slider__item__heading">{{name}}</div><a href="#" data-open-game="{{id}}"><img src="{{preview_img}}" class="b-games-slider__item__image"/></a><a href="#" data-open-game="{{id}}" class="btn _style_bright _size_l b-games-slider__item__more">Подробнее</a>
+                    </li>{{/each}} 
+                  </ul>
+                </div>
+                <div class="b-slider-nav"><a href="#" class="b-slider-nav__prev"></a><a href="#" class="b-slider-nav__next"></a></div>
+              </div>
+            </div>{{/if}} 
             <!-- ~~~ Комментарии ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="container">
-              <div class="b-game__section b-game__comments">
+            <div class="b-game__section b-game__comments">
+              <div class="b-game__comments__heading b-game__heading _section _size_m">Обсудить игру</div>
+              <div class="b-game__comments__wrapper">
                 <div id="vk_comments"></div>
-                <script>VK.Widgets.Comments("vk_comments", {limit: 10, width: "100%", attach: "*"});</script>
               </div>
             </div>
           </div>
         </div>
         <!-- ~~~ Right sidebar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="b-sidebar">
-          <div class="b-sidebar__section b-auth">
-            <div class="b-sidebar__section__heading _size_l">Аккаунт 
-              <div>Play 4 Free</div>
-            </div>
-            <div class="b-auth__section _dark">
-              <label class="form-label">Логин
-                <input type="text" placeholder="введите логин" class="form-input _size_s"/>
-              </label>
-              <label class="form-label">Пароль
-                <input type="password" placeholder="введите пароль" class="form-input _size_s"/>
-              </label>
-              <label class="form-label b-auth__remember">
-                <input type="checkbox" class="form-checkbox"/> Запомнить
-              </label>
-            </div>
-            <div class="b-auth__section">
-              <button type="submit" class="btn _style_submit _size_s">Войти</button>
-            </div>
-            <div class="b-auth__section _dark">
-              <div class="b-auth__socials">Войти через
-                <ul class="b-socials">
-                  <li class="b-socials__item"><a href="#" class="b-socials__icon _size_l _icon_vkontakte"></a></li>
-                  <li class="b-socials__item"><a href="#" class="b-socials__icon _size_l _icon_facebook"></a></li>
-                  <li class="b-socials__item"><a href="#" class="b-socials__icon _size_l _icon_twitter"></a></li>
-                </ul>
-              </div><a href="#" class="b-auth__register link _style_dashed">Зарегестрироваться</a>
-            </div>
-          </div>
+          <!--.b-sidebar__section.b-auth.b-sidebar__section__heading._size_l Аккаунт 
+          <div>Play 4 Free</div>
+          
+          .b-auth__section._dark
+              label.form-label Логин
+                  input(type='text', placeholder='введите логин').form-input._size_s
+          
+              label.form-label Пароль
+                  input(type='password', placeholder='введите пароль').form-input._size_s
+          
+              label.form-label.b-auth__remember 
+          <input type="checkbox" class="form-checkbox"/> Запомнить
+          
+          .b-auth__section
+              button(type='submit').btn._style_submit._size_s Войти
+          
+          .b-auth__section._dark
+              .b-auth__socials Войти через
+                  ul.b-socials
+                      li.b-socials__item: a(href='#').b-socials__icon._size_l._icon_vkontakte
+                      li.b-socials__item: a(href='#').b-socials__icon._size_l._icon_facebook
+                      li.b-socials__item: a(href='#').b-socials__icon._size_l._icon_twitter
+          
+              a(href='#').b-auth__register.link._style_dashed Зарегестрироваться
+          
+          -->
           <div class="b-sidebar-features">
             <div class="b-sidebar__section b-sidebar-features__item">
               <div class="b-sidebar-features__item__heading _icon_best"><strong>Лучшие</strong> Бесплатные игры</div>
-              <div class="b-sidebar-features__item__text">Что-то написано</div>
+              <div class="b-sidebar-features__item__text"><a href="dev.html" class="b-sidebar-features__item__link link _style_dashed">Что-то написано</a></div>
             </div>
             <div class="b-sidebar__section b-sidebar-features__item">
               <div class="b-sidebar-features__item__heading _icon_free">Играй <strong>Бесплатно</strong></div>
-              <div class="b-sidebar-features__item__text">Все игры на нашем сайте абсолютно бесплатны!</div>
+              <div class="b-sidebar-features__item__text"><a href="dev.html" class="b-sidebar-features__item__link link _style_dashed">Все игры на нашем сайте абсолютно бесплатны!</a></div>
             </div>
             <div class="b-sidebar__section b-sidebar-features__item">
               <div class="b-sidebar-features__item__heading _icon_play"><strong>Начни играть</strong> В два клика</div>
-              <div class="b-sidebar-features__item__text">Топовые игры ещё никогда не были так доступны!</div>
+              <div class="b-sidebar-features__item__text"><a href="dev.html" class="b-sidebar-features__item__link link _style_dashed">Топовые игры ещё никогда не были так доступны!</a></div>
             </div>
             <div class="b-sidebar__section b-sidebar-features__item">
               <div class="b-sidebar-features__item__heading _icon_easy"><strong>Быстро</strong></div>
-              <div class="b-sidebar-features__item__text">Регистрация не займёт и 5 минут!</div>
+              <div class="b-sidebar-features__item__text"><a href="dev.html" class="b-sidebar-features__item__link link _style_dashed">Регистрация не займёт и 5 минут!</a></div>
             </div>
             <div class="b-sidebar__section b-sidebar-features__item">
               <div class="b-sidebar-features__item__heading _icon_guide">Читай <strong>гайды</strong></div>
-              <div class="b-sidebar-features__item__text">Получи доступ к прохождениям, подсказкам и секретам!</div>
+              <div class="b-sidebar-features__item__text"><a href="dev.html" class="b-sidebar-features__item__link link _style_dashed">Получи доступ к прохождениям, подсказкам и секретам!</a></div>
             </div>
             <div class="b-sidebar__section b-sidebar-features__item">
               <div class="b-sidebar-features__item__heading _icon_video"><strong>Делай</strong> Видеотрансляции</div>
-              <div class="b-sidebar-features__item__text">Смотри чужие и устраивай собственные видеотрансляции через TWITCH-TV</div>
+              <div class="b-sidebar-features__item__text"><a href="dev.html" class="b-sidebar-features__item__link link _style_dashed">Смотри чужие и устраивай собственные видеотрансляции через TWITCH-TV</a></div>
             </div>
           </div>
         </div>
@@ -374,54 +365,54 @@
           <div class="b-promo__text">Присоединяйся к игровому сообществу “PLAY 4 FREE” <br/>Зарегистрируйся и ... !</div>
           <div class="b-promo__features b-promo-features">
             <div class="b-promo-features__item"><img src="img/b-promo-features__item-1.png" class="b-promo-features__item__image"/>
-              <p class="b-promo-features__item__text">Создай <strong>свою</strong><br/><strong>библиотеку игр!</strong></p>
+              <p class="b-promo-features__item__text"><a href="dev.html" class="b-promo-features__item__link link _style_dashed">Создай <strong>свою</strong><br/><strong>библиотеку игр!</strong></a></p>
             </div>
             <div class="b-promo-features__item"><img src="img/b-promo-features__item-2.png" class="b-promo-features__item__image"/>
-              <p class="b-promo-features__item__text"><strong>Устраивай</strong> собственные<br/><strong>видеотрансляции</strong><br/>посредством 
-                <nobr><strong>TWITCH-TV</strong></nobr>!
-              </p>
+              <p class="b-promo-features__item__text"><a href="dev.html" class="b-promo-features__item__link link _style_dashed"><strong>Устраивай</strong> собственные<br/><strong>видеотрансляции</strong><br/>посредством 
+                  <nobr><strong>TWITCH-TV</strong></nobr>!</a></p>
             </div>
             <div class="b-promo-features__item"><img src="img/b-promo-features__item-3.png" class="b-promo-features__item__image"/>
-              <p class="b-promo-features__item__text"><strong>Получи</strong> доступ <br/>к <strong>гайдам</strong>!</p>
+              <p class="b-promo-features__item__text"><a href="dev.html" class="b-promo-features__item__link link _style_dashed"><strong>Получи</strong> доступ <br/>к <strong>гайдам</strong>!</a></p>
             </div>
             <div class="b-promo-features__item"><img src="img/b-promo-features__item-4.png" class="b-promo-features__item__image"/>
-              <p class="b-promo-features__item__text">Делись <strong>впечатлениями</strong><br/>с другими игроками<br/><strong>на форуме</strong></p>
+              <p class="b-promo-features__item__text"><a href="dev.html" class="b-promo-features__item__link link _style_dashed">Делись <strong>впечатлениями</strong><br/>с другими игроками<br/><strong>на форуме</strong></a></p>
             </div>
             <div class="b-promo-features__item"><img src="img/b-promo-features__item-5.png" class="b-promo-features__item__image"/>
-              <p class="b-promo-features__item__text"><strong>Пиши и размещай</strong><br/>собственные рецензии</p>
+              <p class="b-promo-features__item__text"><a href="dev.html" class="b-promo-features__item__link link _style_dashed"><strong>Пиши и размещай</strong><br/>собственные рецензии</a></p>
             </div>
             <div class="b-promo-features__item"><img src="img/b-promo-features__item-6.png" class="b-promo-features__item__image"/>
-              <p class="b-promo-features__item__text"><strong>Получи</strong> доступ к<br/>своей <strong>игровой</strong><br/><strong>статистике</strong></p>
+              <p class="b-promo-features__item__text"><a href="dev.html" class="b-promo-features__item__link link _style_dashed"><strong>Получи</strong> доступ к<br/>своей <strong>игровой</strong><br/><strong>статистике</strong></a></p>
             </div>
           </div>
           <div class="b-promo__text">И это АБСОЛЮТНО бесплатно!</div>
         </div>
       </div>
-      <div class="b-promo__bottom container"><a href="#" class="btn _style_bright _size_m b-promo__register">Быстрая регистрация</a>
+      <div class="b-promo__bottom container"><a href="dev.html" class="btn _style_bright _size_m b-promo__register">Быстрая регистрация</a>
         <div class="b-promo__line"></div>
         <ul class="b-promo__socials b-socials">
-          <li class="b-socials__item"><a href="#" class="b-socials__icon _size_m _icon_vkontakte"></a></li>
-          <li class="b-socials__item"><a href="#" class="b-socials__icon _size_m _icon_facebook"></a></li>
-          <li class="b-socials__item"><a href="#" class="b-socials__icon _size_m _icon_twitter"></a></li>
+          <li class="b-socials__item"><a href="dev.html" class="b-socials__icon _size_m _icon_vkontakte"></a></li>
+          <li class="b-socials__item"><a href="dev.html" class="b-socials__icon _size_m _icon_facebook"></a></li>
+          <li class="b-socials__item"><a href="dev.html" class="b-socials__icon _size_m _icon_twitter"></a></li>
         </ul>
         <div class="b-promo__slogan">- Будь всегда IN GAME! -</div>
       </div>
     </div>
     <!-- ==== Footer =======================================================================================  -->
     <footer class="b-footer">
-      <div class="b-footer__logo"><a href="#"><img src="img/b-footer__logo.png"/></a></div>
       <div class="b-footer__copy">Все права защищены, 2014-2015 (с)</div>
-      <div class="b-footer__about">Лучшие бесплатные onlime-игры</div>
-      <div class="b-footer__dev"><a href="http://tesla-m.ru/" target="_blank" class="link _style_dashed">Сделано в Tesla маркетинг</a></div>
+      <!--.b-footer__about Лучшие бесплатные onlime-игры-->
+      <div class="b-footer__logo"><a href="./"><img src="img/logo_s.png"/></a></div>
+      <div class="b-footer__dev"><a href="http://dipla.ru/" target="_blank" class="link _style_dashed">Создано в Dipla</a></div>
     </footer>
     <!-- === To top ======================================================================================== --><a href="#" class="b-to-top"></a>
     <!-- === Scripts ======================================================================================= -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/respond.min.js"></script>
     <script src="js/vendor/jquery.fancybox.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="js/vendor/handlebars.min.js"></script>
+    <script src="js/vendor/underscore.min.js"></script>
     <script src="js/vendor/sly.min.js"></script>
+    <script src="js/vendor/imagesloaded.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/games.js"></script>
   </body>
